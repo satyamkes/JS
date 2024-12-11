@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <img id="image" src="IMAGE/43138.jpg" alt="SPS Game">
+    <header id="head">STONE, PAPER AND SCISSOR</header>
+    <br><hr><br>
+    <main>
+    <section id="container_button">
+        <h2>START THE GAME</h2>
+        <button class="button" onclick="
+            let b; let c; let computer; 
+            let random = Math.random() * 3;
+            if (random >0 && random <= 1) {
+                b = 'stone';
+                computer = 'Computer has chosen Stone';
+            }
+            else if (random<1 && random <= 2) {
+                b = 'paper';
+                computer = 'Computer has chosen Paper';
+            }
+            else {
+                b = 'scissor';
+                computer = 'Computer has chosen Scissor';
+            }
+            if (b == 'stone') {
+                c = 'Its Tie';
+            }
+            else if (b == 'paper') {
+                c = 'You Lose';
+            }
+            else{
+                c = 'You Won';
+            }
+            alert('You have chosen Stone <--> ' + computer + ' <--> ' + c);
+        ">Stone</button>
+
+        <button class="button" onclick="
+             b;  c; computer; 
+             random = Math.random() * 3;
+            if (random>0 && random <= 1) {
+                b = 'stone';
+                computer = 'Computer has chosen Stone';
+            }
+            else if (random>1 && random <= 2) {
+                b = 'paper';
+                computer = 'Computer has chosen Paper';
+            }
+            else {
+                b = 'scissor';
+                computer = 'Computer has chosen Scissor';
+            }
+            if (b == 'stone') {
+                c = 'You Won';
+            }
+            else if (b == 'paper') {
+                c = 'Its Tie';
+            }
+            else{
+                c = 'You Lose';
+            }
+            alert('You have chosen Paper <--> ' + computer + ' <--> ' + c);
+        ">Paper</button>
+
+        <button class="button" onclick="
+             b;  c;  computer; 
+             random = Math.random() * 3;
+            if (random>0 && random <= 1) {
+                b = 'stone';
+                computer = 'Computer has chosen Stone';
+            }
+            else if (random>1 && random <= 2) {
+                b = 'paper';
+                computer = 'Computer has chosen Paper';
+            }
+            else {
+                b = 'scissor';
+                computer = 'Computer has chosen Scissor';
+            }
+            if (b == 'stone') {
+                c = 'You Lose';
+            }
+            else if (b == 'paper') {
+                c = 'You Won';
+            }
+            else{
+                c = 'Its Tie';
+            }
+            alert('You have chosen Scissor <--> ' + computer + ' <--> ' + c);
+        ">Scissor</button>
+    </section>
+    <script>
+       
+    </script>
+    </main>
+    <footer role="banner">
+        <h5>..Created By SATYAM..</h5>
+    </footer>
+    <br><hr>
+</body>
+</html>
